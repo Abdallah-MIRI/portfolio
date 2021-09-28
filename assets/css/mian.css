@@ -5,6 +5,24 @@
   font-family: cursive, sans-serif;
 }
 
+.page {
+  position: relative;
+}
+
+#logo {
+  display: block;
+  width: 80px;
+  /* opacity: .6; */
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+#logo img {
+  display: block;
+  width: 100%;
+}
+
 .container {
   max-width: 95%;
   min-height: 100vh;
