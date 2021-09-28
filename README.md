@@ -1,4 +1,4 @@
-# Abdallah Mohamed
+# Abdallah Miri
 
-Portfolio - Abdallah Mohamed
+Portfolio - Abdallah Miri
 [Website](https://abdallah-miri.github.io/portfolio/)
