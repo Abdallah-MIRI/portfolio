@@ -4,4 +4,4 @@
 *[Website](https://abdallah-miri.github.io/portfolio/)*
 
 
-![Logo Miri](assets/img/logo_2.svg)
+![Logo Miri]('./assets/img/MIRI-LOGO.svg')
