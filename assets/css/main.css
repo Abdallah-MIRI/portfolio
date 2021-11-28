@@ -39,6 +39,11 @@ body {
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
+.contant-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
 #logo {
   display: block;
   width: 85px;
@@ -47,6 +52,28 @@ body {
 #logo img {
   display: block;
   width: 100%;
+}
+
+.main-header .contant-header .nav-bar .menu-bar {
+  list-style: none;
+}
+
+.main-header .contant-header .nav-bar .menu-bar .item-menu {
+  display: inline-block;
+}
+
+.main-header .contant-header .nav-bar .menu-bar .item-menu .link-item {
+  display: block;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #445862;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.main-header .contant-header .nav-bar .menu-bar .item-menu .link-item:hover,
+.main-header .contant-header .nav-bar .menu-bar .item-menu .link-item:focus {
+  color: #0D6EFD;
 }
 
 /* ----------- Content Page ----------- */
