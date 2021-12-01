@@ -67,7 +67,7 @@ body {
   border: none;
   background: none;
   width: 25px;
-  height: 16px;
+  height: 17px;
   opacity: 0;
   visibility: hidden;
   position: absolute;
@@ -264,7 +264,7 @@ body {
   #icon-bar {
     opacity: 1;
     visibility: visible;
-    z-index: 1;
+    z-index: 2;
   }
 
   .main-header .contant-header .nav-bar .menu-bar {
