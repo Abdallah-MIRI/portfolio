@@ -1,10 +1,10 @@
 const body = document.getElementById('body');
 const btnBar = document.getElementById('icon-bar');
-const menuBar = document.querySelector('.menu-bar');
+const navBar = document.querySelector('.nav-bar');
 
 btnBar.addEventListener('click', () => {
   
-  body.classList.toggle('hidden')
-  menuBar.classList.toggle('show')
+  body.classList.toggle('hidden');
+  navBar.classList.toggle('show');
 
-})
+});
