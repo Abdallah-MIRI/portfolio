@@ -4,7 +4,13 @@ const navBar = document.querySelector('.nav-bar');
 
 btnBar.addEventListener('click', () => {
   
-  body.classList.toggle('hidden');
-  navBar.classList.toggle('show');
+  classList(body, 'hidden');
+  classList(navBar, 'show');
+  classList(btnBar, 'btn-motion');
 
 });
+
+
+function classList(element, valueElem) {
+  element.classList.toggle(valueElem);
+};

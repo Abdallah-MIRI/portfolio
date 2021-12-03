@@ -271,6 +271,35 @@ body {
     z-index: 2;
   }
 
+  #icon-bar div:nth-child(1),
+  #icon-bar div:nth-child(3) {
+    transition: all .2s ease;
+  }
+  
+  #icon-bar div:nth-child(2) {
+    transition: left .1s ease, visibility .2s ease;
+  }
+  
+  .btn-motion div:nth-child(1) {
+    /* top: 3px;
+    transform: rotate(45deg); */
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);    
+  }
+
+  .btn-motion div:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+    left: -20px;
+  }
+
+  .btn-motion div:nth-child(3) {
+    /* top: 3px;
+    transform: rotate(-45deg); */
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);    
+  }
+
   .main-header .contant-header .nav-bar {
     opacity: 0;
     visibility: hidden;
@@ -289,7 +318,6 @@ body {
     top: 0;
     padding-top: 100px;
     background-color: #f9f9f9;
-    background: antiquewhite;
   }  
 
   .main-header .contant-header .nav-bar.show .item-menu {
