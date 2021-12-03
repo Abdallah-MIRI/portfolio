@@ -1,0 +1,232 @@
+/* 
+** Author: Abdallah Miri
+** Template: Portfolio
+** version: 1.0.0
+*/
+
+/* ----------- globel ----------- */
+body {
+  display: block !important;
+}
+
+.container {
+  max-width: 70% !important;
+}
+
+/* ----------- Blog ----------- */
+/* Page Title */
+.blog .page-title {
+  text-align: center;
+  font-size: 2em;
+  color: #272727;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Categorys */
+.blog .categorys-menu {
+  flex-direction: row;
+  padding: 5px;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 50px auto;
+  align-items: center;
+  min-height: fit-content;
+}
+
+.blog .categorys-menu .category-link {
+  display: block;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #272727;
+  text-decoration: none;
+  background-color: rgb(17 17 26 / 1%);
+  border-radius: 5px;
+  border: 1px solid rgb(0 0 0 / 10%);
+  margin: 5px 5px;
+}
+
+/* Most Popular */
+.most-popular .container-posts {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.posts-all {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.posts-all .card {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(242, 242, 242);
+}
+
+.most-popular .popular-title {
+  font-size: 1.5em;
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+.most-popular .popular-title::before, 
+.most-popular .popular-title::after {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background-color: #0d6efd;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.most-popular .popular-title::after {
+  bottom: 5px;
+  width: 60px;
+}
+
+.most-popular .card {
+  background: rgb(28 255 0 / 8%) !important;
+}
+
+.most-popular .card:nth-child(2) {
+  background: rgb(75 189 223 / 8%) !important;
+}
+
+.most-popular .card:nth-child(3) {
+  background: rgb(255 117 0 / 8%) !important;
+}
+
+.most-popular .card,
+.posts-all .card {
+  max-width: 385px;
+  height: 495px;
+  padding: 30px;
+  margin: 5px 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+}
+
+.blog .most-popular .card .tag a,
+.blog .posts-all .card .tag a {
+  text-decoration: none;
+  font-size: 13px;
+  padding: 5px 10px;
+  border: 1px solid #0d6efd;
+  border-radius: 20px;
+  display: block;
+  max-width: fit-content;
+}
+
+.blog .most-popular .card .post-title,
+.blog .posts-all .card .post-title {
+  font-size: 1.5rem;
+  line-height: 1.33333;
+  font-weight: 600;
+  overflow: hidden;
+  max-width: 100%;
+  height: 100px;
+  margin: 20px 0 15px;
+}
+
+.blog .most-popular .card .post-title a,
+.blog .posts-all .card .post-title a {
+  color: #272727;
+  text-decoration: none;
+}
+
+.blog .most-popular .card .description,
+.blog .posts-all .card .description {
+  letter-spacing: -0.01em;
+  text-align: right;
+  color: #4f5050;
+  line-height: 2;
+  font-size: 1.100rem;
+  font-weight: 500;
+  overflow: hidden;
+  padding-top: 35px;
+  height: 185px;
+}
+
+.blog .most-popular .card .post-link,
+.blog .posts-all .card .post-link {
+  margin-top: 40px;
+  color: #000;
+  width: fit-content;
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 20px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 1;
+}
+
+.blog .most-popular .card .post-link .left-arrow,
+.blog .posts-all .card .post-link .left-arrow {
+  width: 13px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: left .1s ease-in, fill .2s ease;
+  transform: translate(0, -50%);
+}
+
+.blog .most-popular .card .post-link:hover .left-arrow,
+.blog .posts-all .card .post-link:hover .left-arrow {
+  left: -7px;
+  fill: #267bfc;
+} 
+
+/* Pagination */
+.pagination {
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.pagination a {
+  color: rgb(29, 29, 29);
+  text-decoration: none;
+  margin: 5px;
+  line-height: 27px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  transition: background-color .2s ease;
+}
+
+.pagination a:hover {
+  color: #272727;
+  background-color: #75a9f7;
+}
+
+.pagination a.activaet {
+  background: #0d6efd;
+  color: #fff;
+  cursor: text;
+}
+
+.pagination .next-link,
+.pagination .prev-link {
+  position: relative;
+  transition: left .2s ease-in;
+}
+
+.pagination .next-link:hover {
+  left: -5px;
+  background-color: initial;
+  background-color: #b9f8a9;
+}
+
+.pagination .prev-link:hover {
+  right: -5px;
+  background-color: initial;
+  background-color: #f8a9a9;
+}
