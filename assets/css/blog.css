@@ -78,7 +78,7 @@ body {
   background-color: #0d6efd;
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
 }
 
 .most-popular .popular-title::after {
@@ -140,7 +140,7 @@ body {
 .blog .most-popular .card .description,
 .blog .posts-all .card .description {
   letter-spacing: -0.01em;
-  text-align: right;
+  text-align: left;
   color: #4f5050;
   line-height: 2;
   font-size: 1.100rem;
@@ -157,7 +157,7 @@ body {
   width: fit-content;
   font-size: 15px;
   font-weight: 600;
-  padding-left: 20px;
+  padding-right: 20px;
   text-decoration: none;
   display: block;
   position: relative;
@@ -170,14 +170,14 @@ body {
   display: block;
   position: absolute;
   top: 50%;
-  left: 0;
-  transition: left .1s ease-in, fill .2s ease;
-  transform: translate(0, -50%);
+  right: 0;
+  transition: right .1s ease-in, fill .2s ease;
+  transform: translate(0, -50%) rotate(180deg);
 }
 
 .blog .most-popular .card .post-link:hover .left-arrow,
 .blog .posts-all .card .post-link:hover .left-arrow {
-  left: -7px;
+  right: -7px;
   fill: #267bfc;
 } 
 
